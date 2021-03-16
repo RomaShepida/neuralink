@@ -27,7 +27,7 @@ body {
 }
 
 .header {
-  background: url(/images/header/header_bg.jpg) 0 0/cover no-repeat;
+  background: url(../images/header/header_bg.jpg) 0 0/cover no-repeat;
   height: 100vh;
   background-color: #B4BDCB;
 }
