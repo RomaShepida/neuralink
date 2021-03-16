@@ -1,0 +1,87 @@
+@import "_variables.scss";
+
+// Connecting fonts: Roboto regular
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// global styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $color-white;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.container {
+    width: 1360px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav {}
+
+// regular styles
+.header {
+    background: url(/images/header/header_bg.jpg) 0 0/cover no-repeat;
+    height: 100vh;
+    background-color: $color-blue-grey;
+
+    // .header-logo
+    &-logo {
+        padding-top: 32px;
+    }
+
+    // .header-nav
+    &-nav {
+        position: absolute;
+
+        right: 0;
+        top: 22px;
+
+        list-style-type: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: right;
+        
+
+        // .header-nav__item
+        &__item {
+        }
+
+        // .header-nav__link
+        &__link {
+            transition: 0.5s all;
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+                color: #A7FEFF;
+                border-bottom: 1px solid #A7FEFF;
+            }
+        }
+    }
+
+    // .header-title
+    &-title {}
+
+    // .header-links
+    &-links {
+
+        // .header-links__link
+        &__link {}
+    }
+}
