@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-    width: 1350px;
+    max-width: 1350px;
     padding: 0 15px;
     margin: 0 auto;
     position: relative;
@@ -44,6 +44,13 @@ body {
     height: 100vh;
     background-color: $color-blue-grey;
 
+    &-wrapper {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     // .header-logo
     &-logo {
         padding-top: 32px;
@@ -58,9 +65,6 @@ body {
 
         text-align: right;
 
-        // .header-nav__item
-        &__item {}
-
         // .header-nav__link
         &__link {
             transition: 0.5s all;
@@ -68,18 +72,57 @@ body {
 
             &:hover {
                 color: #A7FEFF;
-                border-bottom: 1px solid #A7FEFF;
+                border-bottom: 1px solid $color-teal;
             }
         }
     }
 
     // .header-title
-    &-title {}
+    &-title {
+        font-size: 60px;
+        line-height: 70px;
+        font-weight: 400;
+        width: 385px;
+    }
 
     // .header-links
     &-links {
+        width: 430px;
+        border-top: 2px solid $color-white;
+        padding-top: 25px;
+        margin-bottom: 59px;
+
+
 
         // .header-links__link
-        &__link {}
+        &__link {
+            font-size: 19px;
+            line-height: 24px;
+            text-transform: uppercase;
+            position: relative;
+            padding-top: auto;
+            padding-right: 32px;
+
+            transition: 0.5s all;
+
+            &:first-child {
+                margin-right: 21px;
+            }
+
+            &::after {
+                content: '';
+                width: 20px;
+                height: 16px;
+                background: url(../images/_icons/arrow_right_20x16.png) no-repeat;
+
+                position: absolute;
+                top: 4px;
+                right: 0px;
+            }
+
+            &:hover {
+                color: $color-teal;
+            }
+        }
     }
 }

@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  width: 1350px;
+  max-width: 1350px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
@@ -38,6 +38,12 @@ body {
   height: 100vh;
   background-color: #B4BDCB;
 }
+.header-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .header-logo {
   padding-top: 32px;
 }
@@ -54,4 +60,40 @@ body {
 .header-nav__link:hover {
   color: #A7FEFF;
   border-bottom: 1px solid #A7FEFF;
+}
+.header-title {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 400;
+  width: 385px;
+}
+.header-links {
+  width: 430px;
+  border-top: 2px solid #FFFFFF;
+  padding-top: 25px;
+  margin-bottom: 59px;
+}
+.header-links__link {
+  font-size: 19px;
+  line-height: 24px;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: auto;
+  padding-right: 32px;
+  transition: 0.5s all;
+}
+.header-links__link:first-child {
+  margin-right: 21px;
+}
+.header-links__link::after {
+  content: "";
+  width: 20px;
+  height: 16px;
+  background: url(../images/_icons/arrow_right_20x16.png) no-repeat;
+  position: absolute;
+  top: 4px;
+  right: 0px;
+}
+.header-links__link:hover {
+  color: #A7FEFF;
 }
