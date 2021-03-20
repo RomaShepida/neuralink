@@ -25,16 +25,9 @@ body {
 }
 
 .container {
-    max-width: 1350px;
-    padding: 0 15px;
+    max-width: 1440px;
     margin: 0 auto;
     position: relative;
-
-    &-wide {
-        max-width: 1440px;
-        margin: 0 auto;
-        
-    }
 }
 
 .nav {
@@ -62,11 +55,14 @@ body {
     height: 100vh;
     background-color: $color-blue-grey;
 
+
     &-wrapper {
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     // .header-logo
@@ -151,6 +147,8 @@ body {
     // .cards-items
     &-items {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     // .cards-item
