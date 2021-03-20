@@ -25,12 +25,28 @@ body {
   margin: 0 auto;
   position: relative;
 }
+.container-wide {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 .nav {
   list-style-type: none;
   text-transform: uppercase;
   font-size: 13px;
   line-height: 20px;
+}
+
+.title {
+  font-size: 41px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.link {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .header {
@@ -74,7 +90,7 @@ body {
   margin-bottom: 59px;
 }
 .header-links__link {
-  font-size: 19px;
+  font-size: 20px;
   line-height: 24px;
   text-transform: uppercase;
   position: relative;
@@ -95,5 +111,98 @@ body {
   right: 0px;
 }
 .header-links__link:hover {
+  color: #A7FEFF;
+}
+
+.cards {
+  background-color: #B4BDCB;
+}
+.cards-items {
+  display: flex;
+}
+.cards-item {
+  flex-basis: 33.333%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards-item:nth-child(1) {
+  background-color: #C9A3A4;
+}
+.cards-item:nth-child(2) {
+  background-color: #A7CEEF;
+}
+.cards-item:nth-child(3) {
+  background-color: #ACB5AC;
+}
+.cards-item__title {
+  margin-top: 60px;
+  padding-bottom: 34px;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-bottom: 2px solid #FFFFFF;
+}
+.cards-item__image {
+  text-align: center;
+}
+.cards-item__link {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-left: 60px;
+  margin-bottom: 60px;
+}
+.cards-item__link a {
+  padding-right: 23px;
+  position: relative;
+  transition: all 0.5s;
+}
+.cards-item__link a::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/icons/arrow_right_14x14.png);
+}
+.cards-item__link a:hover {
+  color: #A7FEFF;
+}
+
+.future {
+  background-color: #B4BDCB;
+}
+.future-wrapper {
+  background: url(../images/future/future_bg.png) 50%/cover no-repeat;
+  padding: 60px;
+}
+.future__title {
+  padding-bottom: 34px;
+  width: 427px;
+  border-bottom: 2px solid #FFFFFF;
+}
+.future__text {
+  font-size: 18px;
+  line-height: 24px;
+  width: 340px;
+  padding-top: 29px;
+  margin-bottom: 246px;
+}
+.future__link a {
+  padding-right: 32px;
+  position: relative;
+  transition: all 0.5s;
+}
+.future__link a::after {
+  content: "";
+  width: 20px;
+  height: 16px;
+  background: url(../images/icons/arrow_right_20x16.png) no-repeat;
+  position: absolute;
+  top: 4px;
+  right: 0px;
+}
+.future__link a:hover {
   color: #A7FEFF;
 }
