@@ -205,3 +205,64 @@ body {
 .future__link a:hover {
   color: #A7FEFF;
 }
+
+.footer {
+  color: #858585;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.footer-wrapper {
+  display: flex;
+  padding: 60px;
+}
+.footer-nav {
+  flex-basis: 18%;
+  padding-right: 25px;
+}
+.footer-nav__link {
+  transition: 0.5s all;
+  border-bottom: 1px solid transparent;
+}
+.footer-nav__link:hover {
+  color: #008A9C;
+  border-bottom: 1px solid #BC9465;
+}
+.footer-social {
+  flex-basis: 32%;
+}
+.footer-social__links {
+  margin-bottom: 21px;
+}
+.footer-social__email {
+  position: relative;
+}
+.footer-social__email input {
+  border: none;
+  border-bottom: 1px solid #858585;
+  line-height: 27px;
+  text-transform: uppercase;
+  width: 100%;
+  transition: 0.5s all;
+}
+.footer-social__email input:focus, .footer-social__email input:hover, .footer-social__email input:active {
+  outline: none;
+  color: #008A9C;
+  border-bottom: 1px solid #BC9465;
+}
+.footer-social__email::after {
+  content: "";
+  position: absolute;
+  right: 1px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/icons/arrow_right_grey_14x14.png);
+}
+.footer__logo {
+  flex-basis: 9%;
+  padding-right: 25px;
+}
+.footer__copyright {
+  flex-basis: 41%;
+  padding-right: 25px;
+}

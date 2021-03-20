@@ -85,7 +85,7 @@ body {
             border-bottom: 1px solid transparent;
 
             &:hover {
-                color: #A7FEFF;
+                color: $color-teal;
                 border-bottom: 1px solid $color-teal;
             }
         }
@@ -193,7 +193,7 @@ body {
 
             margin-left: 60px;
             margin-bottom: 60px;
-            
+
             & a {
                 padding-right: 23px;
                 position: relative;
@@ -219,7 +219,7 @@ body {
 
 .future {
     background-color: $color-blue-grey;
-    
+
 
     // .future-wrapper
     &-wrapper {
@@ -229,12 +229,13 @@ body {
 
     // .future__title
     &__title {
-        
+
         padding-bottom: 34px;
         width: 427px;
 
         border-bottom: 2px solid $color-white;
     }
+
     // .future__text
     &__text {
         font-size: 18px;
@@ -243,9 +244,9 @@ body {
         padding-top: 29px;
         margin-bottom: 246px;
     }
+
     // .future__link
     &__link {
-        
 
         & a {
             padding-right: 32px;
@@ -268,5 +269,90 @@ body {
             }
         }
 
+    }
+}
+
+.footer {
+    color: $color-grey;
+    text-transform: uppercase;
+    line-height: 20px;
+
+    // .footer-wrapper
+    &-wrapper {
+        display: flex;
+        padding: 60px;
+    }
+
+    // .footer-nav
+    &-nav {
+        flex-basis: 18%;
+        padding-right: 25px;
+
+        // .footer-nav__link
+        &__link {
+            transition: 0.5s all;
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+                color: #008A9C;
+                border-bottom: 1px solid #BC9465;
+            }
+        }
+    }
+
+    // .footer-social
+    &-social {
+        flex-basis: 32%;
+
+        // .footer-social__links
+        &__links {
+            margin-bottom: 21px;
+        }
+
+        // .footer-social__email
+        &__email {
+            position: relative;
+
+            & input {
+                border: none;
+                border-bottom: 1px solid $color-grey;
+                line-height: 27px;
+                text-transform: uppercase;
+
+                width: 100%;
+
+                transition: .5s all;
+
+                &:focus,
+                &:hover,
+                &:active {
+                    outline: none;
+                    color: #008A9C;
+                    border-bottom: 1px solid #BC9465;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 1px;
+                top: 2px;
+                width: 14px;
+                height: 14px;
+                background-image: url(../images/icons/arrow_right_grey_14x14.png);
+            }
+        }
+    }
+
+    // .footer__logo
+    &__logo {
+        flex-basis: 9%;
+        padding-right: 25px;
+    }
+
+    // .footer__copyright
+    &__copyright {
+        flex-basis: 41%;
+        padding-right: 25px;
     }
 }
